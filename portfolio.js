@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <p>Purchase Price: $${stock.purchasePrice.toFixed(2)}</p>
       <p>Total Investment: $${(stock.shares * stock.purchasePrice).toFixed(2)}</p>
       <p id="profitLoss-${stock.symbol}">Loading...</p>
+
       <button class="delete-button" data-symbol="${stock.symbol}">Delete</button>
     `;
     
@@ -61,6 +62,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const deleteButton = card.querySelector('.delete-button');
     deleteButton.addEventListener('click', () => deleteStock(stock.symbol));
   }
+
+function displayGeminiTip(symbol, tip) {
+  const tipElement = document.getElementById(`geminiTip-${symbol}`);
+  if (tipElement) {
+    tipElement.textContent = `AI Tip: ${tip}`;
+  }
+}
 
   
   function updateChartData(stock) {
@@ -146,6 +154,8 @@ document.addEventListener('DOMContentLoaded', () => {
     saveToLocalStorage();
 
     stockForm.reset();
+
+
   });
 
   
