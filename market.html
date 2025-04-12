@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Market</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="market.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">
+      <img src="0CB7F897-C0DE-4BD2-9D9A-89A56A6033FB_4_5005_c.jpeg" alt="Logo" width="100" height="50">
+    </div>
+    <nav class="nav">
+      <div class="pagination">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="trends.html">Trends</a>
+        <a href="market.html">The Market</a>
+      </div>
+      <div class="auth-buttons">
+        <button>Sign in</button>
+        <button class="register">Register</button>
+      </div>
+    </nav>
+  </header> 
+
+  <!-- TradingView Chart Full Width -->
+  <div class="full-page-widget">
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright">
+        <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">
+          <span class="blue-text">Data from TradingView</span>
+        </a>
+      </div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+      {
+        "autosize": true,
+        "symbol": "NASDAQ:AAPL",
+        "interval": "D",
+        "timezone": "Etc/UTC",
+        "theme": "dark",
+        "style": "1",
+        "locale": "en",
+        "allow_symbol_change": true,
+        "support_host": "https://www.tradingview.com"
+      }
+      </script>
+    </div>
+  </div>
+
+  <!-- 4 Info Boxes -->
+  <section class="market-info-boxes">
+    <div class="info-box">
+      <h3>Stock Highlights</h3>
+      <p>Top gainers and losers in the market today.</p>
+      <div class="more-info">
+        <p>See which stocks are leading and which are falling behind in real-time.</p>
+      </div>
+    </div>
+    <div class="info-box">
+      <h3>What does this stock represent?</h3>
+      <p>Latest updates from the finance world.</p>
+      <div class="more-info">
+        <p>Understand the company's market position and recent developments.</p>
+      </div>
+    </div>
+    <div class="info-box">
+      <h3>Why Invest?</h3>
+      <p>Bitcoin, Ethereum, and altcoin movement.</p>
+      <div class="more-info">
+        <p>Analyze the current trends and sentiments in crypto markets.</p>
+      </div>
+    </div>
+    <div class="info-box">
+      <h3>The Stock's Role Today</h3>
+      <p>Upcoming reports, earnings, and meetings.</p>
+      <div class="more-info">
+        <p>Stay ahead by tracking earnings calls and quarterly financials.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <div class="logo">🅿️</div>
+      <div class="socials">
+        <span>✖️</span>
+        <span>📷</span>
+        <span>▶️</span>
+        <span>💼</span>
+      </div>
+    </div>
+    <div class="footer-right">
+      <div>
+        <h4> <a href="mailto:aayushwadkar08@gmail.com"> Contact Us</a> </h4>
+      </div>
+      <div>
+        <h4><a href="https://finance.yahoo.com"> Explore</a></h4>
+      </div>
+      <div>
+        <h4><a href="https://www.investor.gov/additional-resources/spotlight/never-stop-learning?utm_source=google&utm_medium=cpc&utm_adgroup=%7BAdGroupName%7D&utm_campaign=%7BCampaignName%7D&gad_source=1&gbraid=0AAAAADfhOYmQwG2hX5OMmJCtiDzqKchBw&gclid=Cj0KCQjwnui_BhDlARIsAEo9GuvuNckH_Fg6JGvzpmtWVz1V5Y4el-rvYZrK6HmRHk_4a7aupSvgjAcaAg6OEALw_wcBResources"> Resources</a></h4>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
