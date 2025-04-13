@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  //const API_KEY = '0b125d57d2ce4ced9f84aedf8dce8e81'; // Replace with your API key
+  const API_KEY = '0b125d57d2ce4ced9f84aedf8dce8e81'; // Replace with your API key
   const stockForm = document.getElementById('stockForm');
   const portfolioList = document.getElementById('portfolioList');
   const chartCtx = document.getElementById('chartCanvas').getContext('2d');

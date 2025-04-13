@@ -46,12 +46,12 @@ document.getElementById("email-form").addEventListener("submit", async function(
 
   const symbol = "AAPL"; 
   // Replace with your API key - it's better to store this securely
-  // const apiKey = "your_api_key_here"; 
+  const apiKey = "AIzaSyBqVv0lwrYXtCTeC8VUlHltoDt6mF504Uc"; 
   
   try {
     // For demonstration purposes - normally you'd fetch from the API
-    // const response = await fetch(`https://api.twelvedata.com/quote?symbol=${symbol}&apikey=${apiKey}`);
-    // const data = await response.json();
+    const response = await fetch(`https://api.twelvedata.com/quote?symbol=${symbol}&apikey=${apiKey}`);
+    //const data = await response.json();
     
     // Simulate API response for demo
     const data = {
